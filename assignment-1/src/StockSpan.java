@@ -4,15 +4,13 @@ import java.text.*;
 import java.io.*;
 import java.lang.*; //Eclipse Warning suggests that java.lang is never imported
 
-public class StockSpan
-    {
-	public static void main(String args[])
-     { 
-	  ArrayList<String> dates=new ArrayList<String>();
-	  ArrayList<Float> prices=new ArrayList<Float>();		// Creates objects for date and price arrays 
-      SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD"); //Object to format the date as requested by the assignment
-      String currentLine;
-      try
+public class StockSpan {
+	public static void main(String args[]) { 
+	ArrayList<String> dates=new ArrayList<String>();
+	ArrayList<Float> prices=new ArrayList<Float>();		// Creates objects for date and price arrays 
+      	SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD"); //Object to format the date as requested by the assignment
+	 String currentLine;
+      	try
           {
     	  BufferedReader br=new BufferedReader(new FileReader (args[1])); //Reads and parses the file.
            while ((currentLine=br.readLine())!=null)
